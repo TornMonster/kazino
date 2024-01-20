@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Startpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: inline-block;
+            font-size: 16px;
+            color: #007bff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            border: 1px solid #007bff;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .card a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Casino</h1>
+        <div class="card">
+            <img src="blackjack.jpg" alt="Blackjack game image">
+            <h2>Blackjack</h2>
+            <p>Experience the classic game of Blackjack and try your luck.</p>
+            <a href="blackjack.html">Play Now</a>
+        </div>
+        <div class="card">
+            <img src="cardgame.jpg" alt="Roulette game image">
+            <h2>Roulette</h2>
+            <p>Get excited with the game of Roulette and win big prizes.</p>
+            <a href="roulette.html">Play Now</a>
+        </div>
+        <div class="card">
+            <img src="poker.jpg" alt="Poker game image">
+            <h2>Poker</h2>
+            <p>Test your skills and strategy in the exciting world of Poker.</p>
+            <a href="poker.html">Play Now</a>
+        </div>
+    </div>
+</body
