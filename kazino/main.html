@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Казино</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .games {
+            display: flex;
+            justify-content: center;
+        }
+
+        .game {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 500px;
+        }
+
+        .game h2 {
+            margin-bottom: 10px;
+        }
+
+        .game img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добре дошли в казиното!</h1>
+    <div class="games">
+        <div class="game" id="blackjack">
+            <h2>Black Jack</h2>
+            <img src="blackjack.jpg" alt="Black Jack Image" width="200">
+            <button onclick="startGame('blackjack')">Започни играта</button>
+        </div>
+        <div class="game" id="zarcheta">
+            <h2>Зарчета</h2>
+            <img src="zars.jpg" alt="Зарчета Image" width="200">
+            <button onclick="startGame('zarcheta')">Започни играта</button>
+        </div>
+        <div class="game" id="slot-machine">
+            <h2>Слот машина</h2>
+            <img src="slot.jpg" alt="Слот машина Image" width="200">
+            <button onclick="startGame('slot-machine')">Започни играта</button>
+        </div>
+    </div>
+
+    <script>
+        function startGame(game) {
+            switch (game) {
+                case 'blackjack':
+                    window.location.href = "blackjack.html";
+                    break;
+                case 'zarcheta':
+                    window.location.href = "zarcheta.html";
+                    break;
+                case 'slot-machine':
+                    window.location.href = "Slots.html";
+                    break;
+                default:
+                    console.log("Неизвестна игра.");
+            }
+        }
+    </script>
+</body>
+</html>
